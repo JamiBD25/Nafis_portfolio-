@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>❇️ Quran, Hadith & Dua</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    h1 {
+      color: #2a5d84;
+      text-align: center;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      border-left: 5px solid #2a5d84;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      max-width: 700px;
+    }
+
+    blockquote {
+      font-style: italic;
+      color: #444;
+    }
+
+    .source {
+      text-align: right;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .ayah-arabic, .dua-arabic {
+      font-size: 1.4em;
+      direction: rtl;
+      text-align: right;
+      margin-bottom: 10px;
+      color: #0d3d36;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        margin: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <h3>Nafis Mohammed Jami</h3>
+      <ul class="nav-menu">
+        <li><a href="index.html">Biography</a></li>
+        <li><a href="contact.html">Social Contact</a></li>
+        <li><a href="album.html">Album</a></li>
+        <li><a href="quran-hadith.html" class="active">Quran & Hadith</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <h1>❇️ দৈনিক কোরআন, হাদীস ও দোয়া</h1>
+
+    <!-- 📖 কোরআনের আয়াত -->
+    <div class="card" id="quran">
+      <h2>📖 কোরআনের আয়াত</h2>
+      <div id="quranVerse">লোড হচ্ছে...</div>
+    </div>
+
+    <!-- 📜 হাদীস -->
+    <div class="card" id="hadith">
+      <h2>📜 আজকের হাদীস</h2>
+      <div id="hadithText">লোড হচ্ছে...</div>
+    </div>
+
+    <!-- 📿 দোয়া -->
+    <div class="card" id="dua">
+      <h2>📿 আজকের দোয়া</h2>
+      <div id="dailyDua">লোড হচ্ছে...</div>
+    </div>
+  </main>
+
+  <!-- ✅ Script to fetch Quran, Hadith, Dua -->
+  <script>
+    // ✅ কোরআনের আয়াত লোড
+    async function fetchQuranAyah() {
+      try {
+        const enRes = await fetch('https://api.alquran.cloud/v1/ayah/random/en.asad');
+        const enData = await enRes.json();
+        const ayahNum = enData.data.number;
+
+        const bnRes = await fetch(`https://api.alquran.cloud/v1/ayah/${ayahNum}/bn.zohurul`);
+        const bnData = await bnRes.json();
+
+        const ayah = enData.data;
+        const ayahBn = bnData.data;
+
+        document.getElementById("quranVerse").innerHTML = `
+          <div class="ayah-arabic">${ayah.text}</div>
+          <strong>বাংলা অর্থ:</strong> ${ayahBn.text}<br><br>
+          <div class="source">সূরা ${ayahBn.surah.name} (${ayahBn.surah.englishName}), আয়াত ${ayahBn.numberInSurah}</div>
+        `;
+      } catch (error) {
+        document.getElementById("quranVerse").innerText = "আয়াত লোড করা যায়নি।";
+      }
+    }
+
+    // ✅ হাদীস লোড
+    async function fetchHadith() {
+      try {
+        // হাদীস API না থাকলে fallback দেখাবে
+        document.getElementById("hadithText").innerHTML = `
+          <blockquote>❝ কাজসমূহ নিয়তের উপর নির্ভর করে। মানুষ তার নিয়ত অনুযায়ী প্রতিফল পায়। ❞</blockquote>
+          <div class="source">— সহীহ বুখারী, হাদীস ১</div>
+        `;
+      } catch (error) {
+        document.getElementById("hadithText").innerText = "হাদীস লোড করা যায়নি।";
+      }
+    }
+
+    // ✅ দোয়া লোড (স্ট্যাটিক লিস্ট থেকে রোটেট করে)
+    function loadDua() {
+      const duas = [
+        {
+          arabic: "اللّهُـمَّ أَجِـرْنِي مِنَ النّـارِ",
+          bangla: "হে আল্লাহ! আমাকে জাহান্নাম থেকে রক্ষা করুন।"
+        },
+        {
+          arabic: "رَبِّ زِدْنِي عِلْمًا",
+          bangla: "হে আমার রব! আমার জ্ঞান বৃদ্ধি করুন।"
+        },
+        {
+          arabic: "اللّهُـمَّ اغْفِـرْ لي وَلِـوالِـدَيَّ",
+          bangla: "হে আল্লাহ! আমাকে এবং আমার পিতা-মাতাকে ক্ষমা করুন।"
+        },
+        {
+          arabic: "اللّهُـمَّ إِنِّي أَسْأَلُكَ الْـجَنَّةَ",
+          bangla: "হে আল্লাহ! আমি আপনার নিকট জান্নাত চাই।"
+        }
+      ];
+
+      const index = new Date().getDate() % duas.length;
+      const dua = duas[index];
+
+      document.getElementById("dailyDua").innerHTML = `
+        <div class="dua-arabic">${dua.arabic}</div>
+        <strong>বাংলা অর্থ:</strong> ${dua.bangla}
+      `;
+    }
+
+    // লোড কল
+    fetchQuranAyah();
+    fetchHadith();
+    loadDua();
+  </script>
+
+</body>
+</html>
