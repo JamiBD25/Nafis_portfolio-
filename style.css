@@ -11,7 +11,7 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Navigation Styles */
+/* -------------------- NAVIGATION -------------------- */
 .navbar {
   background-color: #4306f3;
   padding: 1rem 0;
@@ -52,7 +52,7 @@ body {
   color: #ffeb3b;
 }
 
-/* Biography Page Styles */
+/* -------------------- BIOGRAPHY PAGE -------------------- */
 .biography {
   max-width: 800px;
   margin: 20px auto;
@@ -101,14 +101,16 @@ body {
   color: #4306f3;
 }
 
-/* Contact Page Styles */
+/* -------------------- CONTACT PAGE -------------------- */
 .contact-page {
   max-width: 1000px;
   margin: 20px auto;
   padding: 0 20px;
 }
 
-.contact-info, .social-media, .contact-form {
+.contact-info,
+.social-media,
+.contact-form {
   background: white;
   padding: 30px;
   border-radius: 10px;
@@ -116,19 +118,22 @@ body {
   margin-bottom: 30px;
 }
 
-..contact-grid {
+.contact-grid {
   display: flex;
-  flex-direction: column; /* একটার নিচে একটা আসবে */
-  gap: 20px; /* div গুলোর মাঝে ফাঁকা রাখবে */
+  flex-direction: column;
+  gap: 20px;
 }
-.contact-item, .social-item {
+
+.contact-item,
+.social-item {
   background: #f8f9fa;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
 }
 
-.contact-item h3, .social-item h3 {
+.contact-item h3,
+.social-item h3 {
   color: #4306f3;
   margin-top: 0;
 }
@@ -142,7 +147,8 @@ body {
   text-decoration: underline;
 }
 
-.contact-item small, .social-item small {
+.contact-item small,
+.social-item small {
   display: block;
   color: #666;
   font-size: 12px;
@@ -165,7 +171,8 @@ body {
   font-weight: bold;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
   width: 100%;
   padding: 10px;
   border: 2px solid #ddd;
@@ -174,7 +181,8 @@ body {
   box-sizing: border-box;
 }
 
-.form-group input:focus, .form-group textarea:focus {
+.form-group input:focus,
+.form-group textarea:focus {
   border-color: #4306f3;
   outline: none;
 }
@@ -194,7 +202,7 @@ body {
   background-color: #3405d4;
 }
 
-/* Album Page Styles */
+/* -------------------- ALBUM PAGE -------------------- */
 .album-page {
   max-width: 1200px;
   margin: 20px auto;
@@ -255,23 +263,26 @@ body {
   font-weight: bold;
 }
 
-/* Header Styles */
+/* -------------------- HEADER -------------------- */
 header {
   padding: 20px;
 }
 
-/* Responsive Design */
+/* -------------------- RESPONSIVE -------------------- */
 @media (max-width: 768px) {
   .nav-container {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .nav-menu {
     gap: 1rem;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .contact-grid, .social-grid, .photo-grid {
+
+  .contact-grid,
+  .photo-grid {
     grid-template-columns: 1fr;
   }
 }
