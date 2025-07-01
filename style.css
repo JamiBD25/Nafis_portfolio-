@@ -51,6 +51,19 @@ body {
 .nav-menu a.active {
   color: #ffeb3b;
 }
+/* Adjust nav container for small screens */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
 
 /* Biography Page Styles */
 .biography {
