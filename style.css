@@ -64,6 +64,11 @@ body {
     gap: 10px;
   }
 }
+@media (max-width: 500px) {
+  .nav-menu a {
+    font-size: 14px;
+  }
+}
 
 /* Biography Page Styles */
 .biography {
