@@ -353,11 +353,9 @@ display:block;
 grid-template-columns:1fr;
 text-align:center;
 }
-
 .hero-content h1{
-font-size:44px;
+font-size:clamp(36px,8vw,44px);
 }
-
 .hero-buttons{
 justify-content:center;
 }
@@ -365,6 +363,45 @@ justify-content:center;
 .hero-img img{
 width:260px;
 height:260px;
+}
+
+}
+html,body{
+overflow-x:hidden;
+width:100%;
+}
+
+img,
+iframe{
+max-width:100%;
+display:block;
+}
+
+.hero-content h1{
+word-break:break-word;
+}
+
+.hero-buttons .btn{
+width:100%;
+max-width:260px;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+.hero{
+padding-left:15px;
+padding-right:15px;
+}
+
+.hero-container{
+width:100%;
+overflow:hidden;
+}
+
+.navbar{
+width:100%;
+overflow:hidden;
 }
 
 }
