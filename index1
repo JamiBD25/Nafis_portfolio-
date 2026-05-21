@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html
+<head>
+  <meta name="description" content="This is the personal portfolio of Nafis Mohammed Jami. Web design, projects, skills, and contact information available here.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Nafis Mohammed Jami - Portfolio </title>
+  <link href="/Nafis_portfolio-/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h3>Nafis Mohammed Jami</h3>
+      <ul class="nav-menu">
+        <li><a href="/Nafis_portfolio-/index.html" class="active">Biography</a></li>
+<li><a href="/Nafis_portfolio-/Achievements.html">Achievements</a></li>
+        <li><a href="/Nafis_portfolio-/contact.html">Social Contact</a></li>
+        <li><a href="/Nafis_portfolio-/album.html">Album</a></li>
+        <li><a href="/Nafis_portfolio-/quran-hadith.html">Quran-Hadith</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <h1 style="text-align: center; color: #4306f3; border: 2px solid #4306f3; padding: 20px; border-radius: 10px;">
+      Assalamu Alaikum <br /> This is Nafis Mohammed Jami
+    </h1>
+  </header>
+<div class="image-box">
+  <img src="https://i.ibb.co/4nTy6hvt/IMG-20250819-234225-575.png" alt="Profile Image">
+</div>
+  <main class="biography">
+<div>
+    <section class="personal-info">
+      <h2>🔷 Personal Information</h2>
+      <p>🔹 <strong>Full Name:</strong> Nafis Mohammed Jami</p>
+      <p>🔹 <strong>Date of Birth:</strong> 21st March 2010</p>
+      <p>🔹 <strong>Present Location:</strong> Agrabad, Chattogram, Bangladesh</p>
+      <p>🔹 <strong>Permanent Location:</strong> Lohagara, Chattogram, Bangladesh</p>
+      <p>🔹 <strong>Occupation:</strong> Student</p>
+    </section></div>
+<div>
+
+    <section class="about-me">
+      <h2>🔶 About Me</h2>
+      <p>I like village, Hill, River & Nature. I love my country. I want to change my Bangladesh to an Islamic Country.</p>
+    </section></div><div>
+
+    <section class="education">
+      <h2>🔷 Education</h2>
+      <ul>
+        <li><strong>📍2015-2019:</strong> Primary Education at EMGGS in <strong>5.00</strong></li>
+        <li><strong>📍2020-2022:</strong> Class 6-8 at MMSC in CTG</li> <strong>4.29</strong>
+        <li><strong>📍2023-2025:</strong> Class 9-10 at Nasirabad Govt High School in CTG<strong>5.00</strong></l>
+        <li><strong>📍2025-Till:</strong> Class 11 at Bakalia Govt College in CTG</li>
+
+      </ul>
+    </section>
+</div><div>
+    <section class="hobbies">
+      <h2>❇️ Hobbies & Interests</h2>
+      <ul>
+        <li>🔶 Reading Islamic Books</li>
+        <li>🔶 Nature Photography</li>
+        <li>🔶 Exploring Villages and Hills</li>
+        <li>🔶 Learning about Technology</li>
+      </ul>
+    </section></div><div>
+
+    <section class="Work At">
+      <h2>🔷 Work At</h2>
+      <ul>
+        <li>🔹Library Secretary : Parabar Sahittya Sangskritik Songsod</li>
+        <li>🔹Ex Member of Gov.Body: Kisholoy Art And Cultural Academy</li>
+  <li>🔹Executive Of IT & Creative : Society for School Debaters of Chattogram  </li>
+        <li>🔹vice-president : Khude parabar   </ul>
+    </section></div> 
+
+    <section class="skills">
+      <h2>❇️ Skills</h2>
+      <ul>
+        <li>📍 Web Development </li>
+        <li>📍 Machine Learning </li>
+        <li>📍 Recitation of Poem</li>
+        <li>📍 Sing Qawali</li>
+        <li>📍 Give Speech </li>
+      </ul>
+    </section></div>
+
+    <section class="goals">
+      <h2>❇️ Future Goals</h2>
+      <p>My aspiration is to contribute towards making Bangladesh a better Islamic country. I want to pursue higher education in technology and use my knowledge to serve my community and country. I dream of exploring more natural places in Bangladesh and documenting their beauty.</p>
+    </section></div>
+  </main>
+</body>
+
+</html>
