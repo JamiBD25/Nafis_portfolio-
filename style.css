@@ -511,3 +511,133 @@ font-size:20px;
 }
 
 }
+/* =========================
+   footer
+========================= */
+/* Container Layout and Theme Setup */
+.developer-footer {
+  background-color: #1F1A17; /* Dark Chocolate Background */
+  color: #F5F1EC; /* Soft chocolate white */
+  padding: 1.25rem 2rem;
+  border-top: 1px solid #3a2f29;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.footer-credit-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* Developer Profile */
+.dev-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.dev-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #c9b8a7; /* Light chocolate ring */
+}
+
+.dev-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.dev-title {
+  font-size: 0.75rem;
+  color: #E8DED4; /* chocolate white */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dev-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #F5F1EC;
+}
+
+/* Copyright Text */
+.footer-copyright p {
+  margin: 0;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #E8DED4;
+}
+
+/* Social Links */
+.dev-social-links {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.dev-link {
+  color: #F5F1EC;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.dev-link:hover {
+  color: #d6c6b6; /* hover chocolate glow */
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-credit-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+  .dev-profile {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .dev-social-links {
+    justify-content: center;
+  }
+}
+.dev-social-links{
+  display:flex;
+  gap:12px;
+}
+
+.dev-link{
+  text-decoration:none;
+  padding:8px 14px;
+  border-radius:8px;
+  color:white;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+}
+
+.web-link{
+  background:#444;
+}
+
+.fb-link{
+  background:#1877f2;
+}
+
+.dev-link:hover{
+  opacity:0.8;
+}
