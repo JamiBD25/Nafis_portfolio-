@@ -511,15 +511,16 @@ font-size:20px;
 }
 
 }
+
 /* =========================
    footer
 ========================= */
 /* Container Layout and Theme Setup */
 .developer-footer {
-  background-color: #1F1A17; /* Dark Chocolate Background */
-  color: #F5F1EC; /* Soft chocolate white */
+  background-color: #0f172a;
+  color: #f8fafc;
   padding: 1.25rem 2rem;
-  border-top: 1px solid #3a2f29;
+  border-top: 1px solid rgba(255,255,255,0.08);
   font-family: system-ui, -apple-system, sans-serif;
 }
 
@@ -545,7 +546,7 @@ font-size:20px;
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #c9b8a7; /* Light chocolate ring */
+  border: 2px solid #38bdf8;
 }
 
 .dev-info {
@@ -555,7 +556,7 @@ font-size:20px;
 
 .dev-title {
   font-size: 0.75rem;
-  color: #E8DED4; /* chocolate white */
+  color: #94a3b8;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -563,7 +564,7 @@ font-size:20px;
 .dev-name {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #F5F1EC;
+  color: #f8fafc;
 }
 
 /* Copyright Text */
@@ -571,7 +572,7 @@ font-size:20px;
   margin: 0;
   font-size: 0.875rem;
   text-align: center;
-  color: #E8DED4;
+  color: #94a3b8;
 }
 
 /* Social Links */
@@ -581,7 +582,7 @@ font-size:20px;
 }
 
 .dev-link {
-  color:var(--card);
+  color: #f8fafc;
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 500;
@@ -592,7 +593,7 @@ font-size:20px;
 }
 
 .dev-link:hover {
-  color: #d6c6b6; /* hover chocolate glow */
+  color: #38bdf8;
   transform: translateY(-2px);
 }
 
@@ -614,6 +615,7 @@ font-size:20px;
     justify-content: center;
   }
 }
+
 .dev-social-links{
   display:flex;
   gap:12px;
@@ -623,7 +625,7 @@ font-size:20px;
   text-decoration:none;
   padding:8px 14px;
   border-radius:8px;
-  color:white;
+  color:#f8fafc;
   display:flex;
   align-items:center;
   gap:8px;
@@ -631,11 +633,11 @@ font-size:20px;
 }
 
 .web-link{
-  background:#444;
+  background:#111827;
 }
 
 .fb-link{
-  background:#1877f2;
+  background:#818cf8;
 }
 
 .dev-link:hover{
