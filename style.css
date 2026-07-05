@@ -218,8 +218,8 @@ gap:25px;
 
 .about-card,
 .skill-card,
-.video-card,
 .award-card,
+.video-card
 .project-card,
 .contact-card{
 background:var(--card);
@@ -228,7 +228,18 @@ border-radius:24px;
 border:1px solid var(--border);
 overflow:hidden;
 }
-
+. video-card iframe {
+   width: 100%;
+   aspect-ratio: 16/9;
+   border: none;
+   border-radius: 12px;
+   display: block;
+} 
+.video-card:hover {
+  transform: translateY(-5px); /* Lifts the card up slightly */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Adds a soft glow/shadow */
+  cursor: pointer;
+}
 .about-card i{
 font-size:38px;
 margin-bottom:20px;
